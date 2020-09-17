@@ -647,6 +647,10 @@ footer .copyright p {
     opacity: 1;
     visibility: visible;
   }
+
+  .hamburger {
+    background-color: lightslategray;
+  }
   
 
 /* media queries */
@@ -824,5 +828,21 @@ footer .copyright p {
 @media only screen and (max-device-width: 1024px) {
     .innovationParallax, .parallax, header, .header {
         background-attachment: scroll;
+    }
+
+    .script-quote {
+        position: absolute;
+        font-size: 23px;
+        top: 50px;
+        /* left: 25px; */
+        float: left;
+        text-align: left;
+        font-family: script-font;
+        font-weight: 100;
+    }
+
+    .imgHeader {
+        width: 150px;
+        height: 150px;
     }
 }
