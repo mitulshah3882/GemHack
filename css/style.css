@@ -1,4 +1,5 @@
 header {
+    /* Parllax */
     /* background-image: url(../imgs/contact.jpg);
     background-size: cover; */
 
@@ -13,6 +14,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    will-change: webkit-transform;
 }
 
 .small-container {
@@ -553,23 +556,45 @@ footer .copyright p {
     filter: brightness(75%);
     /* Set a specific height */
     min-height: 500px; 
-  
+    
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    will-change: webkit-transform;    
   }
+  
+.innovationParallax {
+    /* The image used */
+    background-image: url("../imgs/city.jpg");
+    /* filter: brightness(75%); */
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    will-change: webkit-transform;
+}
 
 .script-quote {
     position: absolute;
     font-size: 50px;
     top: 50px;
     left: 25px;
-    float: right;
+    float: left;
     text-align: right;
     font-family: script-font;
     font-weight: 100;
+}
+
+.absolute {
+    position: absolute;
 }
 
 @font-face {
@@ -585,19 +610,6 @@ footer .copyright p {
     padding: 70px 0;
 }
 
-.innovationParallax {
-    /* The image used */
-    background-image: url("../imgs/city.jpg");
-    /* filter: brightness(75%); */
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
   #button {
     display: inline-block;
@@ -806,4 +818,11 @@ footer .copyright p {
         width: 87%;
     }
     
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .innovationParallax, .parallax, header, .header {
+        background-attachment: scroll;
+    }
 }
