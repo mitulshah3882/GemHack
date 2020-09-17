@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GemHack.io</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
+            <div class="container topHeader">
+                <a class="navbar-brand" href="#"><img class="imgHeader" src="imgs/gemhack_final.png" alt="#" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        
+        <header id="home">
+            <div class="overlay">
+                <div class="container">
+                    <div>
+                        <h1><span>Welcome</span><br>to GemHack</h1>
+                        <br>
+                        <h4><span>October </span>23 - 26, 2020</h4>
+                        <br>
+                        <p>The World's First Hackathon to solve the Jewelry Industry's most complex problems</p>
+                        <button id="attendButton"><a href="#attend" class="text-uppercase" onclick="scrollBottom()">Attend</a></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        
+        <br>
+        <br>
+        <div class="contact" id="attend">
+            <div class="white-background">
+                <div class="container">
+                    <h2 class="text-center text-uppercase"><span class="black-text">Sign up to </span><span>Participate!</span></h2> 
+                    <iframe class="airtable-embed" src="https://airtable.com/embed/shrClsdQKXioeXkZM?backgroundColor=blue" frameborder="0" onmousewheel="" width="100%" height="800" style="background: transparent; border: 1px solid #ccc;"></iframe>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer id="contact">
+            <div class="container">
+                <!-- <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul> -->
+                <br>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- <div class="item date">
+                            <h4 class="text-uppercase">resent posts</h4>
+                            <p><a href="#"><i class="fab fa-facebook-f">Facebook</i></a></p>
+                            <p><a href="#"><i class="fab fa-twitter"></i></a></p>
+                            <p><a href="#"><i class="fab fa-linkedin-in"></i></a></p>
+                            <p><a href="#"><i class="fab fa-google-plus-g"></i></a></p>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="item">
+                            <h4 class="text-uppercase">Contact us</h4>
+                            <p class="address">
+                                <a target="_blank" href="mailto:gemhackteam@gemhack.co">Email: GemHack Team</a><br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="item">
+                            <h4 class="text-uppercase">Social Media</h4>
+                            <ul>
+                                <!-- <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li> -->
+                                <li><a target="_blank" href="https://www.instagram.com/gemhackco/?hl=en"><i class="fab fa-instagram"></i> Instagram</a></li>
+                                <li><a target="_blank" href="https://twitter.com/gemhackco"><i class="fab fa-twitter"></i> Twitter</a></li>
+                                <!-- <li><a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a></li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <!-- <div class="item">
+                            <h4 class="text-uppercase">newsletter</h4>
+                            <form>
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-right">
+                <p><a target="_blank" href="mailto:mitulshah3882@gmail.com">Website Powered by Mitul Shah</a> // Copyright 2019  Design by <a href="https://html.design">Free Html Templates</a></p>
+            </div>
+        </footer>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);  
+                
+                $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
+                
+                $('.navbar ul li a.search').on('click', function (e) {
+                    e.preventDefault();
+                });
+                $('.navbar a.search').on('click', function () {
+                    $('.navbar form').fadeToggle();
+                });
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            })
+
+            function scrollBottom() {
+                $("#attendButton").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#attend").offset().top
+                    }, 1000);
+                });
+            }
+        </script>
+    </body>
+</html>
