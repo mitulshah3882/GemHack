@@ -35,7 +35,7 @@
                                 <a class="dropdown-item" href="#about">Our Mission</a>
                                 <!-- <a class="dropdown-item" href="#schedule">Schedule</a> -->
                                 <a class="dropdown-item" href="#why">Why GemHack</a>
-                                <!-- <a class="dropdown-item" href="#home">FAQs</a> -->
+                                <!-- <a class="dropdown-item" href="./faq.html">FAQs</a> -->
                             </div>
                         </li>
                         <!-- <li class="nav-item">
@@ -49,6 +49,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" onclick="toFAQ()" href="./faq.html">FAQs</a>
                         </li>
                         <!-- <li class="nav-item .search-container">
                             <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
@@ -312,6 +315,8 @@
                     
                     e.preventDefault();
                     $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+
+
                 });
                 
                 // jQuery function to open dropdown on hover
@@ -346,7 +351,9 @@
                 });
             })
             
-            
+            function toFAQ() {
+                location.href = './faq.html'
+            }
 
             function scrollBottom() {
                 $("#attendButton").click(function() {
