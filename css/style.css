@@ -736,6 +736,10 @@ footer .copyright p {
         width: 100%;
         position: static;
     }
+
+    .navbar-collapse {
+        margin-top: -50px;
+    }
     
     /* about */
     
@@ -791,6 +795,10 @@ footer .copyright p {
         margin-bottom: 40px;
     }
 
+    .navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+        margin-top: -40px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -844,5 +852,9 @@ footer .copyright p {
     .imgHeader {
         width: 150px;
         height: 150px;
+    }
+
+    .white-background {
+        margin-top: 8em;
     }
 }

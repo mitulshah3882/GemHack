@@ -688,7 +688,7 @@ footer .copyright p {
   .responsive {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 33.33%;
   }
   
   @media only screen and (max-width: 700px) {
@@ -792,6 +792,14 @@ footer .copyright p {
     nav.navbar form {
         width: 100%;
         position: static;
+    }
+
+    .navbar.navbar {
+        margin-top: -20px;
+    }
+
+    .navbar-collapse {
+        margin-top: -50px;
     }
     
     /* about */
@@ -899,11 +907,16 @@ footer .copyright p {
     }
 
     .imgHeader {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 75px;
+        zoom: 1.75;
     }
 
     .faqiFrame {
         width: 100%;
+    }
+
+    .white-background {
+        margin: 8em 20px 5em;
     }
 }

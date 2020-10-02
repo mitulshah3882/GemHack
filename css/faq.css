@@ -740,6 +740,14 @@ footer .copyright p {
         width: 100%;
         position: static;
     }
+
+    .navbar.navbar {
+        margin-top: -20px;
+    }
+
+    .navbar-collapse {
+        margin-top: -50px;
+    }
     
     /* about */
     
@@ -846,11 +854,13 @@ footer .copyright p {
     }
 
     .imgHeader {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 75px;
+        zoom: 1.75;
     }
 
     .faqiFrame {
         width: 100%;
     }
+    
 }
