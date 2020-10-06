@@ -168,7 +168,7 @@ header button:hover a {
 
 .about-us {
     position: relative;
-    padding: 100px 0;
+    /* padding: 100px 0; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -261,12 +261,13 @@ header button:hover a {
 }
 
 .about-us .first {
-    width: 100px;
-    height: 200px;
+    width: inherit;
+    height: 450px;
     position: absolute;
     background-color: #bd8cbf;
-    top: 140px;
+    top: -16px;
     z-index: -5;
+    left: 0;
 }
 
 .about-us .second {
@@ -321,13 +322,13 @@ header button:hover a {
 
 .services .carousel-control-next {
     right: 0;
-    top: 80%;
+    top: 100%;
     right: 40%;
-    background-color: #FFF;
+    /* background-color: #FFF; */
 }
 
 .services .carousel-control-prev {
-    top: 80%;
+    top: 100%;
     left: 40%;
 }
 
@@ -651,6 +652,11 @@ footer .copyright p {
   .hamburger {
     background-color: lightslategray;
   }
+
+  .shadow {
+      box-shadow: 0px 0px 11px 13px #bd8cbf !important;
+      border-radius: 100px;
+  }
   
 
 /* media queries */
@@ -854,7 +860,7 @@ footer .copyright p {
         height: 150px;
     }
 
-    .white-background {
+    /* .white-background {
         margin-top: 8em;
-    }
+    } */
 }
