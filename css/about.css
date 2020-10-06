@@ -661,6 +661,14 @@ footer .copyright p {
     width: 51%;
   }
 
+  .nirvam {
+      background-image: url("../imgs/nirvam2.png");
+      background-repeat: no-repeat;
+      width: auto;
+      height: 350px;
+      background-size: cover;
+  }
+
   /* Pictures */
 
   div.gallery {
