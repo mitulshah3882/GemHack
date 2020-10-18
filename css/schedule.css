@@ -156,3 +156,9 @@ text-shadow:1px 1px 1px rgba(0,0,0,0.3);
   text-align:right;
   font-style:italic;
 }
+
+.legend {
+  border-radius: 20px;
+  border: 1px solid #17191B;
+  width: 250px;
+}
