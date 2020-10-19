@@ -668,6 +668,11 @@ footer .copyright p {
       box-shadow: 0px 0px 1px 13px #bd8cbf !important;
       border-radius: 100px;
   }
+
+  .responsive {
+      width: 100%;
+      height: auto;
+  }
   
 
 /* media queries */
